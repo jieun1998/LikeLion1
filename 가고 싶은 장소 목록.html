@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <div class="container-fluid">
     <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -18,24 +17,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-fluid">
     <h1><a href ="Jieun's homepage.html">가고싶은 곳 목록</a></h1>
-    <div id = "list">
-        <ol>
-          <li><a href="자기소개.html"class="class"id="id">자기소개</a></li>
-          <li><a href="2020-1 수강 과목.html"class="class">2020-1 수강 과목</a></li>
-          <li><a href="가고 싶은 장소 목록.html">가고싶은 곳 목록</a></li>
-          <li><a href="배운 코딩 목록.html">배운 코딩목록</a></li>
-        </ol>
+    <div id = "grid">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation"><a href="자기소개.html">자기소개</a></li>
+          <li role="presentation"><a href="2020-1 수강 과목.html">2020-1 수강 과목</a></li>
+          <li role="presentation" class= "active" ><a href="가고 싶은 장소 목록.html">가고싶은 곳 목록</a></li>
+          <li role="presentation"><a href="배운 코딩 목록.html">배운 코딩목록</a></li>
+        </ul>
     <div id ="body">
         <ul>
             <li><h3><건대 감성당></h3>
-                <br><u>칵테일 무한리필</u>
-                <br><img src ="감성당.jpg" width = "30%">  
+                <br><u>칵테일 무한리필</u> &nbsp;&nbsp; <button type="button" class="button bar"><a href="https://store.naver.com/restaurants/detail?entry=plt&id=1641895963&query=%EA%B0%90%EC%84%B1%EB%8B%B9&tab=menu">메뉴판</a></button>
+                <br><img src ="감성당.jpg" width = "25%">  
             </li>
             <li><h3><휘닉스 블루캐니언></h3>
                 <br><u>입장권 쓰기</u>
             </li>
         </ul>
     </div>
+    <div class="panel-footer" align ="center">made by. Bae Ji Eun <br>멋쟁이 사자처럼 8기</div>
 </body>
 </html>

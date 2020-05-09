@@ -32,5 +32,14 @@ a {
     grid-template-columns: 150px 1fr;
   }
   #body {
-    padding-left:80px;
+    padding-left:100px;
+  }
+
+  .panel-footer {background : pink;
+    position: fixed; bottom: 0; width: 100% ;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
   }

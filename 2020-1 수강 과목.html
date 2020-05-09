@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <div class="container-fluid">
     <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -18,14 +17,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-fluid">
     <h1><a href ="Jieun's homepage.html">2020-1 수강 과목</a></h1>
-    <div id = "list">
-        <ol>
-          <li><a href="자기소개.html"class="class"id="id">자기소개</a></li>
-          <li><a href="2020-1 수강 과목.html"class="class">2020-1 수강 과목</a></li>
-          <li><a href="가고 싶은 장소 목록.html">가고싶은 곳 목록</a></li>
-          <li><a href="배운 코딩 목록.html">배운 코딩목록</a></li>
-        </ol>
+    <div id = "grid">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation"><a href="자기소개.html">자기소개</a></li>
+          <li role="presentation" class="active"><a href="2020-1 수강 과목.html">2020-1 수강 과목</a></li>
+          <li role="presentation"><a href="가고 싶은 장소 목록.html">가고싶은 곳 목록</a></li>
+          <li role="presentation"><a href="배운 코딩 목록.html">배운 코딩목록</a></li>
+        </ul>
     <div id ="body">
         <ul><h3>
             <li>인지심리</li>
@@ -36,6 +36,8 @@
             <li>컴퓨팅사고와 SW코딩</li>
             <li>통계분석원론</li>
         </ul></h3>
+    </div>
+    <div class="panel-footer" align ="center">made by. Bae Ji Eun <br>멋쟁이 사자처럼 8기</div>
     </div>
 </body>
 </html>
