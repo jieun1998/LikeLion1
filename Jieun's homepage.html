@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
   <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-  <!-- 합쳐지고 최소화된 최신 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  <!-- 부가적인 테마 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> 배지은의 홈페이지 </title>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Yeon+Sung&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src = "colors.js"></script>
 </head>
+
 <body>
   <div class="container-fluid">
   <h1>★배지은의 홈페이지에 오신 것을 환영합니다★</h1>
@@ -33,7 +31,7 @@
     <br><br><strong>※ 다소 TMI를 포함할 수 있으니 유의하시기 바랍니다</strong>
      <br><br><img src="picture.jpg" width="27%">
   </div>
-
+  <input id = "night_day" type ="button" value="night" onclick ="nightDayHandler(this);">
   <div class="panel-footer" align ="center">made by. Bae Ji Eun <br>멋쟁이 사자처럼 8기</div>
 </body>
 </html>
