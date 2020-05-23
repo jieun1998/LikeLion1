@@ -6,7 +6,7 @@ var Links = {
     //     alist[i].style.color = color;
     //     i = i+1;
     // }
-    $('ul').css('color',color);
+    $('a').css('color',color);
   }
 }
 
@@ -29,12 +29,13 @@ function nightDayHandler(self){
       Body.setBackgroundColor('black');
       Body.setColor('white');
       self.value='day';
-      Links.setColor(powderblue);
+      Links.setColor('powderblue');
 
 
     } else{
       Body.setBackgroundColor('white');
       Body.setColor('black');
       self.value='night';
+      Links.setColor('blue');
     }
 }
