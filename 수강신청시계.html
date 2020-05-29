@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수강신청시계</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href ="styletab.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <h1><a href ="Jieun's homepage.html">수강신청 시계</a></h1>
+        <div id = "grid">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><a href="자기소개.html">자기소개</a></li>
+              <li role="presentation"><a href="2020-1 수강 과목.html">2020-1 수강 과목</a></li>
+              <li role="presentation"><a href="가고 싶은 장소 목록.html">가고싶은 곳 목록</a></li>
+              <li role="presentation" ><a href="배운 코딩 목록.html">배운 코딩목록</a></li>
+              <li role="presentation" class ="active"><a href="수강신청시계.html">수강신청 시계</a></li>
+            </ul>
+        </div>
+
+    <div class = "content">
+        <div class = "window">
+          <div id ="w_clock">
+            <h2>CLOCK</h2>
+            <h3>00:00:00</h3>
+          </div>
+          <div id ="w_stopwatch">
+            <h2>STOPWATCH</h2>
+            <h3>00:00</h3>
+            <button id="start">start</button>
+            <button id="reset">reset</button>
+          </div>
+          <div id ="w_timer">
+            <h2>TIMER</h2>
+            <h3>00:00</h3>
+            <input id ="m_timer" type ="number"><span>분</span>
+            <input id ="s_timer" type ="number"><span>초</span>
+            <button id="start2">start</button>
+            <button id="reset2">reset</button>
+          </div>
+        </div>
+        <div class = "select">
+            <input id= "selectClock" type ="radio" name = "select"
+            checked>
+            <input id = "selectStopwatch" type ="radio" name = "select">
+            <input id = "selectTimer" type ="radio" name = "select">
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer" align ="center">made by. Bae Ji Eun <br>멋쟁이 사자처럼 8기</div>
+</body>
+<script type ="text/javascript" src = "tab.js"></script>
+<script type ="text/javascript" src = "clock.js"></script>
+<script type ="text/javascript" src = "stopwatch.js"></script>
+<script type ="text/javascript" src = "timer.js"></script>
+</html>

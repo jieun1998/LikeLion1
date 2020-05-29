@@ -36,7 +36,11 @@ a {
   }
 
   .panel-footer {background : pink;
-    position: fixed; bottom: 0; width: 100% ;
+    position: fixed; bottom:0; width: 100%;
+  }
+
+  .js-weather{
+    position: fixed; bottom:12%; left: 1%;
   }
 
   #grid {

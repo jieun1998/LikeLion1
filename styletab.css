@@ -1,0 +1,39 @@
+body{
+    background-image:url("성대사진.jpg");
+}
+
+.content{
+    width : 60%;
+    height : 40%;
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+    text-align:center;
+  }
+  .window{
+    height: 80%;
+    border: 5px solid black;
+    border-radius: 5%;
+  }
+  #w_stopwatch, #w_timer{
+    display:none;
+  }
+  input[type=number]{
+    width:50px;
+  }
+  h2{
+    font-family: 'Black Han Sans', sans-serif;font-family: 'Yeon Sung', cursive;
+    font-size: 30px;
+    margin: 5px 0px 0px 0px;
+    text-shadow: 2px 2px white;
+  }
+  span{
+      color:white;
+  }
+
+  h3{
+    font-family: 'Black Han Sans', sans-serif;font-family: 'Yeon Sung', cursive;
+    font-size: 80px;
+    margin: 0px 0px 0px 0px;
+    text-shadow: 4px 4px white;
+  }
