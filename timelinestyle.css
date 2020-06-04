@@ -1,0 +1,118 @@
+#title{
+    text-align: center;
+    font-family: 'Hi Melody', cursive;
+    font-size:25px;
+}
+.contents{
+    padding:0 15%;
+    font-family:"a옛날사진관3";
+    font-size:10;
+    margin:10%
+}
+body{
+    background-color:beige;
+}
+
+img{
+    position:relative;
+    width:100px;
+    grid-column:1;
+    border-radius:100%;
+    border:2px solid black;
+    top:-65px;
+    left:-30px;
+    z-index:10;
+}
+.card{
+    position:relative;
+    display:grid;
+    grid-template-columns: 60px auto 30px;
+    grid-template-rows:20px 50px 20px 45px;
+    background-color: antiquewhite;
+    width:40%;
+    margin-bottom:10%;
+    border: 2px solid skyblue;
+    border-radius:10%;
+    box-shadow:skyblue 6px 2px;
+    transition: 0.4s;
+}
+
+.card:hover{
+    background-color:skyblue;
+    box-shadow:none;
+    color:white;
+}
+
+.date{
+    position:relative;
+    grid-column:2;
+    z-index:5;
+    background-color:antiquewhite;
+    margin-left: 15px;
+    top :-10px;
+    box-shadow: skyblue 5px 5px;
+}
+
+.what{
+    position:relative;
+    grid-column:2;
+    font-family: 'Hi Melody', cursive;
+    font-size:30px;
+}
+
+.where{
+    position:relative;
+    grid-column:2;
+}
+.text{
+    position:relative;
+    grid-column:2;
+}
+.dot{
+    width:20px;
+    height:20px;
+    background-color:black;
+    position:absolute;
+    right:-28%;
+    top:40%;
+    border-radius: 100%;
+}
+.line{
+    width:5px;
+    background-color: black;
+    position:absolute;
+    top:30%;
+    left:50%;
+    height:220%;
+    margin-left:-2.5px;
+}
+.card:nth-child(even){
+    margin-left:60%;
+}
+
+.card:nth-child(even) .dot{
+    left:-30%;
+}
+.buttons{
+    text-align:center;
+}
+
+#tothetop{
+    position:fixed;
+    left:0px;
+    bottom:10px;
+}
+@media(max-width:1000px){
+    .dot,.line{
+        display:none;
+    }
+    .card{
+        width:80%;
+        margin-left:10%;
+        margin-bottom:10%;
+    }
+    .card:nth-child(even){
+        margin-left:10%;
+    }
+
+}
